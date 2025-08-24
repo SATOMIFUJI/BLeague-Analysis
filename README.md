@@ -1,2 +1,35 @@
 # BLeague-Analysis
-Analysis of B.LEAGUE club financial data and win rate impact on revenue
+## Analysis of B.LEAGUE club financial data and win rate impact on revenue
+
+## Bリーグにおける勝率は営業収入を伸ばすのか？ ― スポーツビジネスの構造分析と収益予測 ― 
+
+## プロジェクト概要
+本プロジェクトは、職業訓練の卒業制作として実施しました。  
+B.LEAGUE（男子プロバスケットボールリーグ）のクラブ財務データと勝率データを用い、  
+「勝率は営業収入を伸ばすのか？」をテーマに分析・予測を行いました。  
+
+## 使用データ
+- 2016〜2023年のB1リーグ財務データ（収入・費用項目）
+- 各クラブの勝率・順位
+
+## 分析内容
+1. 相関ヒートマップによる特徴量の確認
+2. 営業収入に対する勝率の単独効果
+3. 勝率×スポンサー収入の交互作用分析
+4. 営業収入に対する主要因の重回帰分析 / ランダムフォレスト比較
+5. 2024〜2026年の営業収入予測
+6. 経営方針の提案
+
+## 成果
+- 決定係数 R² ≈ 0.96（重回帰分析）
+- 勝率単体の効果は限定的だが、スポンサー収入との交互作用で影響が強まる
+- 将来の収益予測モデルを構築し、クラブ経営の示唆を提案
+
+## ファイル構成
+- `report.pdf` … 卒業制作レポート全文
+- `code/analysis.ipynb` … Pythonコード（pandas, scikit-learn を使用）
+- `data/example_data.csv` … 分析用サンプルデータ
+
+## 開発環境
+- Python 3.x
+- pandas, numpy, matplotlib, scikit-learn
