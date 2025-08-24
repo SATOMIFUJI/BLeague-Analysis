@@ -92,10 +92,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score, mean_squared_error
 
-### データ読み込み（ファイル名は適宜変更）
+### データ読み込み
 df = pd.read_excel("datafiles/卒業レポート/B_R_data1.xlsx")
 
-### 勝率 × 各変数の交互作用列もあらかじめ追加（必要に応じて）
+### 勝率 × 各変数の交互作用列もあらかじめ追加
 df["勝率_スポンサー"] = df["勝率"] * df["スポンサー収入"]
 df["勝率_入場料"] = df["勝率"] * df["入場料収入"]
 df["勝率_物販"] = df["勝率"] * df["物販収入"]
