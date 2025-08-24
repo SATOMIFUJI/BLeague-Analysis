@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import matplotlib
 
-### 日本語フォントの設定（Windowsの場合）
+### 日本語フォントの設定
 matplotlib.rcParams['font.family'] = 'Meiryo'
 matplotlib.rcParams['axes.unicode_minus'] = False
 
